@@ -12,6 +12,7 @@ window.onload = function() {
         }
         this.test = params;
 
+
         emailjs.sendForm('service_0zquxn6', 'template_ufyro17', this)
             .then(function() {
                 console.log('SUCCESS!');
