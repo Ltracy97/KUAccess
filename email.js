@@ -6,7 +6,7 @@ window.onload = function() {
             name: document.getElementById("name").value,
             email:document.getElementById("email").value,
             building:document.getElementById("building").value,
-            location:document.getElementById("inorout").value,
+            location:document.getElementsByName("inorout").value,
             description:document.getElementById("loc").value
 
         }
