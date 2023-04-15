@@ -1,12 +1,10 @@
-<!DOCTYPE html>
 <html>
-<script type = "text/javascript" src = "email.js"></script>
-</script>
+
 <body>
 
 <h2>Test Form</h2>
 
-<form id = "test" action="email.js">
+<form id = "test" action="" >
   
   
   <label for="name">Name:</label><br>
@@ -20,13 +18,19 @@
   <label for="indoor">Indoor</label><br>
   <input type="radio" id="outdoor" name="door" value="outdoor">
   <label for="outdoor">Outdoor</label><br>
+  <button onclick = "check()">Submit</button>
   
   
-  
-  
-  
-  <input type="submit" value="Submit" onclick ="check()">
+  <script type="text/javascript" src="email.js"></script>
 
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+  (function(){
+  emailjs.init("JTeSPyUT-yfQxkN1J");
+  })();
+  </script>
 
 
 </form> 
