@@ -18,7 +18,14 @@
          </nav>
       </div>
         <main>
-         <div id="head">
+          <script type="text/javascript" src="email.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('JTeSPyUT-yfQxkN1J');
+            })();</script>
+          <div id="head">
             <p>Some examples of physical barriers to report include:</p>
             <ul>
                <li>A sidewalk area that needs a curb cut</li>
@@ -28,7 +35,7 @@
          </div>
          <div id="wrapper">
             <div class="FormCenter">
-               <form>
+               <form id="report_form">
                  <label for="name">Name:</label><br>
                  <input type="text" id="name" name="name"><br>
                  <label for="email">Email:</label><br>
@@ -180,8 +187,3 @@
          </footer>
    </body>
 </html>
-
-
-
-
-
