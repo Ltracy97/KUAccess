@@ -1,17 +1,16 @@
 function check(){
-    emailjs.init("JTeSPyUT-yfQxkN1J");
-    var params = {
-        names : document.getElementById("name").value,
-        location : document.getElementById("bname").value,
-        near : document.getElementById("door").value,
-        floor : document.getElementById("floor").value,
-        email : document.getElementById("email").value
-        //image : document.getElementById("image").value
-    };
-    const serID = "service_0zquxn6";
-    const tempID = "template_ufyro17";
-
-    emailjs.send(serID,tempID,params);
+    document.getElementById('test').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('service_0zquxn6', 'template_ufyro17', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
 
 
 
