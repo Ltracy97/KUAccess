@@ -60,7 +60,7 @@
   		justify-content: center;}
   	input[type="text"] {width: 100%;}
   	input[type="email"] {width: 100%;}
-  	input[type="submit"] {height:40px;
+  	#wrapper button {height:40px;
   		width: 100%;
   		font-size: 2em;}
   	textarea {width: 100%;}
