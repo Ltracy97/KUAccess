@@ -13,13 +13,15 @@ window.onload = function() {
         this.test = params;
 
 
-        emailjs.sendForm('service_0zquxn6', 'template_ufyro17', this)
+        emailjs.sendForm('service_rae4fbc', 'template_ufyro17', this)
             .then(function() {
                 console.log('SUCCESS!');
                 location.replace("https://ltracy97.github.io/KUAccess/Index.html");
             }, function(error) {
                 console.log('FAILED...', error);
+                location.replace("https://ltracy97.github.io/KUAccess/Index.html");
             });
     });
+
 
 }
