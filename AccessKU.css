@@ -140,14 +140,14 @@
 		max-width:100%;
 		height: auto;}
 	nav ul {border-width:1px 0;							/*Nav menu placement*/
-    	list-style:none;
-    	margin:0;
-    	padding:0;
+    		list-style:none;
+    		margin:0;
+    		padding:0;
 		max-width:2048px;
-    	background-color: #0051ba;
-    	list-style-type: none;
-    	font-size: 48px;
-    	text-align:center;}
+    		background-color: #0051ba;
+    		list-style-type: none;
+    		font-size: 48px;
+    		text-align:center;}
 	li a {padding:5px 10px;}
 	#head {background-color: #0051ba;						/* Everything that isn't header and footer */
 		margin-left:25px;
@@ -174,7 +174,7 @@
 		padding-right: 5px;}
 	#homebut .nbutton {height:200px;
 	  	width:90%;
-	  	font-size: 48px;
+	  	font-size: 2em;
 	 	border-radius: 30px;
 	  	padding: 10px 20px;
     	margin: 10px;}
