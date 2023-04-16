@@ -17,6 +17,7 @@ window.onload = function() {
         emailjs.sendForm('service_rae4fbc', 'template_ufyro17', this)
             .then(function() {
                 window.alert('SUCCESS!');
+                location.replace("https://ltracy97.github.io/KUAccess/Index.html");
             }, function(error) {
                 window.alert('FAILED...', );
             });
